@@ -1,4 +1,63 @@
-# AirBnB Clone - The Console
+#0x06. AirBnB clone - Web dynamic
+
+Requirements
+General
+Allowed editors: vi, vim, emacs
+All your files will be interpreted on Chrome (version 57.0)
+All your files should end with a new line
+A README.md file, at the root of the folder of the project, is mandatory
+Your code should be semistandard compliant with the flag --global $: semistandard *.js --global $
+All your JavaScript must be in the folder scripts
+You must use JQuery version 3.x
+You are not allowed to use var
+HTML should not reload for each action: DOM manipulation, update values, fetch data…
+
+
+GitHub
+There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.
+
+More Info
+Import JQuery
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+Before starting the project…
+You will work on a codebase using Flasgger, you will need to install it locally first before starting the RestAPI:
+
+$ sudo apt-get install -y python3-lxml
+$ sudo pip3 install flask_cors # if it was not installed yet
+$ sudo pip3 install flasgger
+If the RestAPI is not starting, please read the error message. Based on the(ses) error message(s), you will have to troubleshoot potential dependencies issues.
+
+Here some solutions:
+
+jsonschema exception
+$ sudo pip3 uninstall -y jsonschema 
+$ sudo pip3 install jsonschema==3.0.1
+No module named 'pathlib2'
+$ sudo pip3 install pathlib2
+Expose ports from your Vagrant
+In your Vagrantfile, add this line for each port forwarded
+
+# I expose the port 5001 of my vm to the port 5001 on my computer
+config.vm.network :forwarded_port, guest: 5001, host: 5001 
+if you need to expose other ports, same line but you will need to replace the “guest port” (inside your vagrant) and your “host port” (outside your vagrant, used from your browser for example)
+
+It’s important in your project, to use the AirBnB API with the port 5001
+
+Tasks
+0. Last clone!
+
+1. Cash only
+
+2. Select some Amenities to be comfortable!
+
+3. API status
+
+4. Fetch places
+
+5. Filter places by Amenity
+2 More advanced Tasks
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
 
 #### Functionalities of this command interpreter:
@@ -154,11 +213,5 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-
-Second part of Airbnb: Joann Vuong
-## License
-Public Domain. No copy write protection. 
+Gemechis Wakjira<hackthehacker33@gmail.com>
+Zeinu Kedir<zeinuka641@gmail.com> 
